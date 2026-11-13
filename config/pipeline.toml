@@ -1,0 +1,17 @@
+# Default pipeline configuration. Paths are relative to the repository root
+# (run commands from the repo root). Every path can be overridden on the CLI.
+
+[paths]
+input_dir     = "data/sample/incoming"     # folder scanned for transaction files
+accounts_file = "data/sample/accounts.csv" # reference data (chart of accounts)
+database      = "warehouse/pipeline.duckdb"
+reports_dir   = "reports"
+log_dir       = "logs"
+
+[ingest]
+file_pattern  = "transactions_*.csv"   # files are processed in sorted name order
+stop_on_error = false                  # true = abort the run at the first failed file
+
+[validation]
+allowed_currencies       = ["USD", "EUR", "GBP", "INR"]
+future_tolerance_minutes = 5           # events later than run start + tolerance are rejected
