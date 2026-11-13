@@ -1,0 +1,23 @@
+transaction_id,expected_status,expected_reason,scenario
+T-0001,CURATED,,valid deposit; exact duplicate row in file 001 quarantined as DUPLICATE_EVENT; replay in file 002 counted as already loaded
+T-0002,CURATED,,valid 3-leg transfer with fee; extra leg in file 002 quarantined as TRANSACTION_ALREADY_POSTED
+T-0003,CURATED,,valid payment; legs arrive out of order in the file
+T-0004,CURATED,,valid EUR transfer; legs use different timezone notation for the same instant; conflicting copy in file 002 quarantined
+T-0005,QUARANTINED,UNBALANCED,debits 50.00 vs credits 45.00
+T-0006,QUARANTINED,SINGLE_LEG,only one leg
+T-0007,QUARANTINED,UNKNOWN_ACCOUNT,invalid reference key ACC-7777
+T-0008,QUARANTINED,INVALID_CURRENCY,currency XYZ
+T-0009,QUARANTINED,MISSING_REQUIRED_FIELD,blank amount
+T-0010,QUARANTINED,INVALID_AMOUNT,negative amount
+T-0011,QUARANTINED,INVALID_TIMESTAMP,non ISO-8601 timestamp
+T-0012,QUARANTINED,MIXED_CURRENCY,USD and EUR legs
+T-0013,QUARANTINED,CURRENCY_ACCOUNT_MISMATCH,EUR leg on a USD account
+T-0014,CURATED,,lower-case direction/currency/type normalised to upper case
+T-0015,QUARANTINED,MALFORMED_ROW,row has 11 fields instead of 10
+T-0016,QUARANTINED,FUTURE_TIMESTAMP,event dated 2031
+T-0017,QUARANTINED,BEFORE_ACCOUNT_OPEN,event before ACC-9001 was opened
+T-0018,QUARANTINED,LEG_TIMESTAMP_MISMATCH,legs one hour apart
+T-0019,CURATED,,valid but takes ACC-1002 below zero -> listed in v_balance_exceptions
+T-0020,CURATED,,valid EUR deposit in a file with an extra (ignored) column
+T-0021,CURATED,,late-arriving event (earlier than already loaded events) -> is_late_arrival = true
+T-0022,QUARANTINED,INVALID_DIRECTION,direction SIDEWAYS

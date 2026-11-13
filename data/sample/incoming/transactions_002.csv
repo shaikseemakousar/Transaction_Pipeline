@@ -1,0 +1,11 @@
+event_id,transaction_id,leg_seq,account_id,direction,amount,currency,transaction_type,event_ts,description,channel
+E-0020-1,T-0020,1,EXT-EUR,DEBIT,300.00,EUR,DEPOSIT,2026-11-02T09:00:00Z,eur deposit,branch
+E-0020-2,T-0020,2,ACC-1003,CREDIT,300.00,EUR,DEPOSIT,2026-11-02T09:00:00Z,eur deposit,branch
+E-0021-1,T-0021,1,ACC-1001,DEBIT,30.00,USD,TRANSFER,2026-11-01T08:00:00Z,late arriving transfer,mobile
+E-0021-2,T-0021,2,ACC-1002,CREDIT,30.00,USD,TRANSFER,2026-11-01T08:00:00Z,late arriving transfer,mobile
+E-0001-1,T-0001,1,EXT-USD,DEBIT,200.00,USD,DEPOSIT,2026-11-01T09:00:00Z,cash deposit,branch
+E-0001-2,T-0001,2,ACC-1001,CREDIT,200.00,USD,DEPOSIT,2026-11-01T09:00:00Z,cash deposit,branch
+E-0002-4,T-0002,4,FEE-USD,CREDIT,0.50,USD,TRANSFER,2026-11-01T10:00:00Z,extra leg for an already posted transaction,mobile
+E-0004-1,T-0004,1,ACC-1003,DEBIT,80.00,EUR,TRANSFER,2026-11-01T09:15:00Z,amended amount for a loaded event,mobile
+E-0022-1,T-0022,1,ACC-1001,SIDEWAYS,5.00,USD,PAYMENT,2026-11-02T10:00:00Z,invalid direction,web
+E-0022-2,T-0022,2,ACC-2001,CREDIT,5.00,USD,PAYMENT,2026-11-02T10:00:00Z,invalid direction,web

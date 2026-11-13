@@ -1,0 +1,9 @@
+transaction_id,transaction_type,currency,total_amount,leg_count,event_ts,source_file
+T-0001,DEPOSIT,USD,200.00,2,2026-11-01 09:00:00,transactions_001.csv
+T-0002,TRANSFER,USD,101.50,3,2026-11-01 10:00:00,transactions_001.csv
+T-0003,PAYMENT,USD,45.25,2,2026-11-01 11:30:00,transactions_001.csv
+T-0004,TRANSFER,EUR,75.00,2,2026-11-01 09:15:00,transactions_001.csv
+T-0014,PAYMENT,EUR,25.00,2,2026-11-01 15:00:00,transactions_001.csv
+T-0019,PAYMENT,USD,400.00,2,2026-11-01 14:00:00,transactions_001.csv
+T-0020,DEPOSIT,EUR,300.00,2,2026-11-02 09:00:00,transactions_002.csv
+T-0021,TRANSFER,USD,30.00,2,2026-11-01 08:00:00,transactions_002.csv

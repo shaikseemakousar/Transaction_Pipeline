@@ -1,0 +1,18 @@
+event_id,transaction_id,leg_seq,account_id,direction,amount,signed_amount,currency,transaction_type,event_ts,description,is_late_arrival,source_file,source_line
+E-0001-1,T-0001,1,EXT-USD,DEBIT,200.00,-200.00,USD,DEPOSIT,2026-11-01 09:00:00,cash deposit,false,transactions_001.csv,3
+E-0001-2,T-0001,2,ACC-1001,CREDIT,200.00,200.00,USD,DEPOSIT,2026-11-01 09:00:00,cash deposit,false,transactions_001.csv,4
+E-0002-1,T-0002,1,ACC-1001,DEBIT,101.50,-101.50,USD,TRANSFER,2026-11-01 10:00:00,transfer with fee,false,transactions_001.csv,5
+E-0002-2,T-0002,2,ACC-1002,CREDIT,100.00,100.00,USD,TRANSFER,2026-11-01 10:00:00,transfer with fee,false,transactions_001.csv,6
+E-0002-3,T-0002,3,FEE-USD,CREDIT,1.50,1.50,USD,TRANSFER,2026-11-01 10:00:00,transfer fee,false,transactions_001.csv,7
+E-0003-1,T-0003,1,ACC-1002,DEBIT,45.25,-45.25,USD,PAYMENT,2026-11-01 11:30:00,grocery purchase,false,transactions_001.csv,2
+E-0003-2,T-0003,2,ACC-2001,CREDIT,45.25,45.25,USD,PAYMENT,2026-11-01 11:30:00,grocery purchase,false,transactions_001.csv,8
+E-0004-1,T-0004,1,ACC-1003,DEBIT,75.00,-75.00,EUR,TRANSFER,2026-11-01 09:15:00,eur transfer (UTC+1 notation),false,transactions_001.csv,9
+E-0004-2,T-0004,2,ACC-1004,CREDIT,75.00,75.00,EUR,TRANSFER,2026-11-01 09:15:00,eur transfer (same instant in UTC),false,transactions_001.csv,10
+E-0014-1,T-0014,1,ACC-1004,DEBIT,25.00,-25.00,EUR,PAYMENT,2026-11-01 15:00:00,lower-case values are normalised,false,transactions_001.csv,39
+E-0014-2,T-0014,2,ACC-1003,CREDIT,25.00,25.00,EUR,PAYMENT,2026-11-01 15:00:00,lower-case values are normalised,false,transactions_001.csv,40
+E-0019-1,T-0019,1,ACC-1002,DEBIT,400.00,-400.00,USD,PAYMENT,2026-11-01 14:00:00,valid but overdraws a non-overdraft account,false,transactions_001.csv,37
+E-0019-2,T-0019,2,ACC-2001,CREDIT,400.00,400.00,USD,PAYMENT,2026-11-01 14:00:00,valid but overdraws a non-overdraft account,false,transactions_001.csv,38
+E-0020-1,T-0020,1,EXT-EUR,DEBIT,300.00,-300.00,EUR,DEPOSIT,2026-11-02 09:00:00,eur deposit,false,transactions_002.csv,2
+E-0020-2,T-0020,2,ACC-1003,CREDIT,300.00,300.00,EUR,DEPOSIT,2026-11-02 09:00:00,eur deposit,false,transactions_002.csv,3
+E-0021-1,T-0021,1,ACC-1001,DEBIT,30.00,-30.00,USD,TRANSFER,2026-11-01 08:00:00,late arriving transfer,true,transactions_002.csv,4
+E-0021-2,T-0021,2,ACC-1002,CREDIT,30.00,30.00,USD,TRANSFER,2026-11-01 08:00:00,late arriving transfer,true,transactions_002.csv,5

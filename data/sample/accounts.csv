@@ -1,0 +1,11 @@
+account_id,account_name,account_type,currency,opening_balance,allow_overdraft,opened_at
+ACC-1001,Customer One,CUSTOMER,USD,1000.00,false,2025-01-15T09:00:00Z
+ACC-1002,Customer Two,CUSTOMER,USD,250.00,false,2025-02-01T09:00:00Z
+ACC-1003,Customer Three,CUSTOMER,EUR,500.00,false,2025-03-10T09:00:00Z
+ACC-1004,Customer Four,CUSTOMER,EUR,0.00,true,2025-04-05T09:00:00Z
+ACC-2001,Corner Grocery,MERCHANT,USD,0.00,false,2025-01-01T00:00:00Z
+ACC-9001,Recently Opened,CUSTOMER,USD,0.00,false,2026-11-01T12:00:00Z
+EXT-USD,External settlement USD,EXTERNAL,USD,0.00,true,2025-01-01T00:00:00Z
+EXT-EUR,External settlement EUR,EXTERNAL,EUR,0.00,true,2025-01-01T00:00:00Z
+FEE-USD,Fee income USD,FEE_INCOME,USD,0.00,true,2025-01-01T00:00:00Z
+ACC-BAD1,Broken Reference Row,CUSTOMER,ABC,10.00,maybe,2025-01-01T00:00:00Z

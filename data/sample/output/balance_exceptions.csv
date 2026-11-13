@@ -1,0 +1,2 @@
+account_id,event_id,transaction_id,event_ts,direction,amount,allow_overdraft,running_balance
+ACC-1002,E-0019-1,T-0019,2026-11-01 14:00:00,DEBIT,400.00,false,-65.25

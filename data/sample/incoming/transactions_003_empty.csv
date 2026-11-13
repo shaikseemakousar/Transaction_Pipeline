@@ -1,0 +1,1 @@
+event_id,transaction_id,leg_seq,account_id,direction,amount,currency,transaction_type,event_ts,description
