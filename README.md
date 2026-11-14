@@ -172,7 +172,7 @@ tests/                     unit and end-to-end tests
 scripts/benchmark.py       performance test
 data/sample/               hand-made input, expected results, sample output
 docs/                      architecture, data dictionary, design decisions, build steps
-ai/                        prompt history and AI usage notes
+Aii/                        prompt history and AI usage notes
 ```
 
 Naming: everything is `snake_case`, timestamps are stored in UTC, and every curated or quarantined row keeps
@@ -181,4 +181,4 @@ Naming: everything is `snake_case`, timestamps are stored in UTC, and every cura
 ## Use of AI
 
 I used an AI coding assistant during this project, as the challenge allows. My prompts and notes on how I used it
-are in [ai/prompt_history.md](ai/prompt_history.md).
+are in [Aii/RROMPT_RESPONSE_HISTORY.md].
