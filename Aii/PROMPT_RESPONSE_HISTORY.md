@@ -402,7 +402,7 @@ Four things the docs say plainly that you may want to act on:
 
 **Prompt**
 
-> now give the prompt and response history for submission
+> give the prompt and response history
 
 **Response:** this file.
 
