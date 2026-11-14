@@ -397,7 +397,7 @@ Four things the docs say plainly that you may want to act on:
 - **Late events:** an event that is genuinely more than 3 days late has no override today; you would change `LATE_DAYS` or add an allow-list.
 - **No unload:** accepted bad data cannot be removed by load; you rebuild from the source files or restore a backup.
 
-I stated the Python version only as "tested on 3.12 / SQLite 3.45" rather than claiming support for older versions, because I haven't run it on any.
+
 
 ---
 
