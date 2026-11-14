@@ -1,6 +1,6 @@
 # transaction-pipeline
 
-This is my submission for the YottaFlex 72-hour data engineering challenge.
+
 
 The task was to build a pipeline that takes debit/credit transaction data, checks that it is actually correct
 (legs balance, currencies make sense, events are in a sensible order) and makes sure bad records never end up
