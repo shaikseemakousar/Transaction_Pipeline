@@ -175,8 +175,7 @@ docs/                      architecture, data dictionary, design decisions, buil
 Aii/                        prompt history and AI usage notes
 ```
 
-Naming: everything is `snake_case`, timestamps are stored in UTC, and every curated or quarantined row keeps
-`run_id`, `source_file`, `source_line` and `file_checksum`.
+
 
 ## Use of AI
 
