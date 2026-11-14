@@ -172,7 +172,7 @@ tests/                     unit and end-to-end tests
 scripts/benchmark.py       performance test
 data/sample/               hand-made input, expected results, sample output
 docs/                      architecture, data dictionary, design decisions, build steps
-Aii/                        prompt history and AI usage notes
+Aii/                       prompt history and AI usage notes
 ```
 
 
