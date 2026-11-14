@@ -88,10 +88,7 @@
 | Balance recon: closing = opening + Σ(entries) | 100% of accounts |
 | Source-to-target row count match | 100% |
 
-## 7. Open questions to settle first
-Do you have a source-provided per-account sequence number? That decides whether ordering is deterministic or best-effort. Also, are balances needed intraday or end-of-day only?
 
-If you share a sample payload, I can map it to these tables and write the DDL and merge SQL.
 
 ---
 
