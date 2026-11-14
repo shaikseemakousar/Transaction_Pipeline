@@ -181,4 +181,5 @@ Naming: everything is `snake_case`, timestamps are stored in UTC, and every cura
 ## Use of AI
 
 I used an AI coding assistant during this project, as the challenge allows. My prompts and notes on how I used it
-are in [Aii/RROMPT_RESPONSE_HISTORY.md].
+are in [Aii/RROMPT_RESPONSE_HISTORY.md](PROMPT_RESPONSE_HISTORY.md)
+
