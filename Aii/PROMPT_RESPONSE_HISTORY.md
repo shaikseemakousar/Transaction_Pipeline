@@ -1,6 +1,5 @@
 # Prompt and response history
 
-Ten prompts, in order. Each entry has the prompt verbatim and the reply as shown in chat. Tool activity (writing files, running tests and benchmarks) is left out, because the code is in the deliverable files named under each turn. Automatic system notices are not prompts and are omitted.
 
 ---
 
